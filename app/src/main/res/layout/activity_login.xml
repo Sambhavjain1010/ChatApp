@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.LoginActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To WhatsApp"
+        android:textColor="@color/teal_700"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:text="Verify Your Number"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/verification_text"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_textSize="20dp" />
+
+        <EditText
+            android:id="@+id/phoneNumberEt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="20sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nextBtn"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:enabled="false"
+        android:padding="16dp"
+        android:text="Next"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:cornerRadius="5dp" />
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity"
+    android:id="@+id/rootView">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolBar"
+        android:elevation="10dp"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark"
+        app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        android:background="@color/purple_500"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/userImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:shapeAppearance="@style/RoundedImageView"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:focusable="true"
+            android:clickable="true"/>
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            tools:text="Sambhav Jain"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"/>
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeToLoad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/inputBox"
+        android:layout_below="@+id/toolBar">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/msgsRv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:overScrollMode="ifContentScrolls"
+            tools:listitem="@layout/list_item_chat_message_sent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/inputBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_toStartOf="@+id/sendBtn"
+            app:cardCornerRadius="30dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/smileBtn"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/ic_baseline_emoji_emotions_24"/>
+                <com.vanniktech.emoji.EmojiEditText
+                    android:id="@+id/msgEdtv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/smileBtn"
+                    android:background="@color/white"
+                    android:gravity="top|start"
+                    android:hint="Type your message"
+                    android:imeOptions="actionGo"
+                    android:inputType="textMultiLine|textCapSentences|textLongMessage|text"
+                    android:lineSpacingExtra="5dp"
+                    android:maxHeight="120dp"
+                    android:maxLength="700"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:singleLine="false"
+                    android:textColorHint="#b6b6b6"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <ImageView
+            android:id="@+id/sendBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_baseline_send_24"/>
+    </RelativeLayout>
+</RelativeLayout>

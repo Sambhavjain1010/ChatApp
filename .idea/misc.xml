@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/HP/AndroidStudioProjects/WhatsAppClone/app/src/main/res/drawable/count_background.xml" value="0.12" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/WhatsAppClone/app/src/main/res/drawable/ic_baseline_send_24.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/WhatsAppClone/app/src/main/res/drawable/ic_high_five.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/WhatsAppClone/app/src/main/res/drawable/ic_high_five_inverted.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/WhatsAppClone/app/src/main/res/drawable/ic_high_five_selected.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/WhatsAppClone/app/src/main/res/layout/activity_chat.xml" value="0.22554347826086957" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/WhatsAppClone/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/WhatsAppClone/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/WhatsAppClone/app/src/main/res/layout/activity_otp.xml" value="0.4" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/WhatsAppClone/app/src/main/res/layout/activity_sign_up.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/WhatsAppClone/app/src/main/res/layout/empty_view.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/WhatsAppClone/app/src/main/res/layout/fragment_people.xml" value="0.20341880341880342" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/WhatsAppClone/app/src/main/res/layout/fragments_chats.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/WhatsAppClone/app/src/main/res/layout/list_item.xml" value="0.264" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/WhatsAppClone/app/src/main/res/layout/list_item_chat_message_recieved.xml" value="0.536" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/WhatsAppClone/app/src/main/res/layout/list_item_chat_message_sent.xml" value="0.264" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/WhatsAppClone/app/src/main/res/layout/list_item_date_header.xml" value="0.22554347826086957" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/WhatsAppClone/app/src/main/res/menu/main_menu.xml" value="0.24375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
